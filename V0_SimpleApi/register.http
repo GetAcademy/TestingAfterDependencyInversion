@@ -1,0 +1,33 @@
+@V0_SimpleApi_HostAddress = http://localhost:5222
+
+### Register user – OK
+POST http://localhost:5222/register
+Content-Type: application/json
+
+{
+  "username": "alice"
+}
+
+### Register user – username already taken
+POST http://localhost:5222/register
+Content-Type: application/json
+
+{
+  "username": "alice"
+}
+
+### Register user – too short username
+POST http://localhost:5222/register
+Content-Type: application/json
+
+{
+  "username": "ab"
+}
+
+### Register user – missing username
+POST http://localhost:5222/register
+Content-Type: application/json
+
+{
+  "username": ""
+}
