@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="V0_SimpleApi/V0_SimpleApi.csproj" />
+  <Project Path="V1A_DependencyInjection/V1A_DependencyInjection.csproj" />
 </Solution>
