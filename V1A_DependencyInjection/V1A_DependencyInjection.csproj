@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\V1A_DependencyInjection.Core\V1A_DependencyInjection.Core.csproj" />
+  </ItemGroup>
+
 </Project>

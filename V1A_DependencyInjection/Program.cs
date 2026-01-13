@@ -1,6 +1,7 @@
 using V1A_DependencyInjection;
-using V1A_DependencyInjection.DomainService;
-using V1A_DependencyInjection.Model;
+using V1A_DependencyInjection.Core;
+using V1A_DependencyInjection.Core.DomainService;
+using V1A_DependencyInjection.Core.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IUserRepository,InMemoryUserRepository>();
@@ -10,7 +11,11 @@ var app = builder.Build();
 
 app.MapPost("/register", (RegisterRequest req, RegisterService registerService) =>
 {
-    return registerService.Register(req);
+    var registerResponse = registerService.Register(req);
+
+    return registerResponse.Success
+        ? Results.Ok(registerResponse)
+        : Results.Conflict(registerResponse);
 });
 
 app.Run();

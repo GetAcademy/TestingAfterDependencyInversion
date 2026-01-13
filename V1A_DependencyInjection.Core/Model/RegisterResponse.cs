@@ -1,4 +1,4 @@
-﻿namespace V1A_DependencyInjection.Model
+﻿namespace V1A_DependencyInjection.Core.Model
 {
     public class RegisterResponse
     {

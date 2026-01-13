@@ -1,6 +1,6 @@
-﻿using V1A_DependencyInjection.Model;
+﻿using V1A_DependencyInjection.Core.Model;
 
-namespace V1A_DependencyInjection.DomainService
+namespace V1A_DependencyInjection.Core.DomainService
 {
     public interface IUserRepository
     {

@@ -1,5 +1,5 @@
-﻿using V1A_DependencyInjection.DomainService;
-using V1A_DependencyInjection.Model;
+﻿using V1A_DependencyInjection.Core.DomainService;
+using V1A_DependencyInjection.Core.Model;
 
 namespace V1A_DependencyInjection
 {
