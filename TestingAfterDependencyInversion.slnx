@@ -3,4 +3,7 @@
   <Project Path="V1A_DependencyInjection.Core/V1A_DependencyInjection.Core.csproj" />
   <Project Path="V1A_DependencyInjection.Test/V1A_DependencyInjection.Test.csproj" />
   <Project Path="V1A_DependencyInjection/V1A_DependencyInjection.csproj" />
+  <Project Path="V1B_DependencyInversionWithoutInterface.Core/V1B_DependencyInversionWithoutInterface.Core.csproj" />
+  <Project Path="V1B_DependencyInversionWithoutInterface.Test/V1B_DependencyInversionWithoutInterface.Test.csproj" />
+  <Project Path="V1B_DependencyInversionWithoutInterface/V1B_DependencyInversionWithoutInterface.csproj" />
 </Solution>

@@ -9,6 +9,13 @@ builder.Services.AddScoped<IUserRepository,InMemoryUserRepository>();
 builder.Services.AddScoped<RegisterService>();
 var app = builder.Build();
 
+
+// In memory database
+var userDatabase = new List<User>
+{
+    new User("terje")
+};
+
 app.MapPost("/register", (RegisterRequest req, RegisterService registerService) =>
 {
     var registerResponse = registerService.Register(req);
